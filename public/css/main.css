@@ -1,0 +1,94 @@
+/*-- image overlay --*/
+.container-img-overlay {
+    position: relative;
+}
+
+.image {
+    display: block;
+}
+@media (max-width: 640px) {
+    .image {
+        height: 203px;
+        width: 170px;
+    }
+}
+@media (min-width: 640px) {
+    .image {
+        height: 203px;
+        width: 133px;
+    }
+}
+
+@media (min-width: 768px) {
+    .image {
+        height: 203px;
+        width: 133px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .image {
+        height: 242px;
+        width: 166px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .image {
+        height: 242px;
+        width: 166px;
+    }
+}
+
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    opacity:0;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.container-img-overlay:hover .overlay {
+    opacity: 1;
+}
+/*text over img */
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    background: #c91c55 !important;
+}
+
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    background: #c91c55 !important;
+}
+
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    background: #c91c55 !important;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    background: #c91c55 !important;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #c91c55 !important;
+}
